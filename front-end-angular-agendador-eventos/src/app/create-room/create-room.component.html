@@ -1,0 +1,31 @@
+<h3>Agende seu Evento</h3>
+<div><br></div>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Responsável</label>
+      <input type="text" class="form-control" id="Responsável" required [(ngModel)]="room.name" name="name">
+    </div>
+    <div><br></div>
+    <div class="form-group">
+      <label for="name">Data</label>
+      <input type="text" class="form-control" id="Horário Início" required [(ngModel)]="room.date" name="date">
+    </div>
+    <div><br></div>
+    <div class="form-group">
+      <label for="name">Horário de Início</label>
+      <input type="text" class="form-control" id="Horário de Encerramento" required [(ngModel)]="room.startHour" name="startHour">
+    </div>
+    <div><br></div>
+    <div class="form-group">
+        <label for="name">Horário de Encerramento</label>
+        <input type="text" class="form-control" id="endHour" required [(ngModel)]="room.endHour" name="endHour">
+    </div>
+    <div><br></div>
+    <button type="submit" class="btn btn-success">Salva</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <button class="btn btn-success" (click)="newRoom()">Add</button> -->
+</div>

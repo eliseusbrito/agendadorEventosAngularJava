@@ -1,0 +1,9 @@
+
+.footer {
+   /* color: #f00;*/
+    float: right;
+    margin-right: 100px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-style: italic;
+}
